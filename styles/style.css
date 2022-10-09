@@ -1,8 +1,3 @@
-h1, h2, h3, h4, h5, h6, p {
-  margin: 0;
-  padding: 0; 
-}
-
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -36,7 +31,9 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .section-title {
-  width: 60%;
+  margin: 0;
+  padding: 0;
+  max-width: 60%;
   line-height: 1.15;
   font-size: 60px;
   font-weight: 600;
@@ -44,8 +41,10 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .section-subtitle {
+  margin: 0;
+  padding: 0;
   margin-top: 20px;
-  width: 60%;
+  max-width: 60%;
   text-align: center;
   line-height: 34px;
   font-size: 24px;
@@ -75,6 +74,8 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .table__heading {
+  margin: 0;
+  padding: 0;
   margin-bottom: 20px;
   line-height: 1.15;
   font-size: 24px;
@@ -82,6 +83,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .table__text {
+  margin-top: 20px;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -89,13 +91,6 @@ h1, h2, h3, h4, h5, h6, p {
 
 .table_text:nth-child(3) {
   margin-top: 20px;
-}
-
-
-
-
-.block_margin-bottom {
-  margin-bottom:100px;
 }
 
 
@@ -111,10 +106,10 @@ h1, h2, h3, h4, h5, h6, p {
   max-height: 756px;
   /* выше установили ограничения для секции */
   background-color: #F2F2F2;
-/*  margin-bottom:100px;*/
+  margin-bottom:100px;
 }
 
-.logo_place-header {
+.header__logo_place_header {
   background-image: url(../images/logo_place_header.svg);
   position: absolute;
   top: 30px;
@@ -123,9 +118,11 @@ h1, h2, h3, h4, h5, h6, p {
 
 .header__title {
   position: relative;
+  margin: 0;
+  padding: 0;
   left: 64px;
   width: 730px;
-  min-height: 96px;
+  line-height: 96px;
   font-size: 102px;
   font-weight: 600;
   align-self: center;
@@ -133,9 +130,11 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .header__subtitle {
+  margin: 0;
+  padding: 0;
   position: absolute;
-  width: 388px;
-  min-height: 25px;
+  max-width: 388px;
+  line-height: 25px;
   font-size: 18px;
   font-weight: normal;
   left: 64px;
@@ -172,17 +171,20 @@ h1, h2, h3, h4, h5, h6, p {
 .description {
   display: flex;
   flex-direction: column;
+  margin-bottom:100px;
 }
 
 .two-columns {
   display: flex;
-  width: 80%;
+  max-width: 80%;
   align-self: center;
   justify-content: space-between;
   align-items: flex-start;
 }
 
 .two-columns__brief {
+  margin: 0;
+  padding: 0;
   width: 175px;
   line-height: 1.2;
   font-size: 18px;
@@ -190,31 +192,36 @@ h1, h2, h3, h4, h5, h6, p {
   color: #2f80ed;
 }
 
-.two-columns_main-text {
+.two-columns__main-text {
   min-width: 784px;
-  width: 80%;
+  max-width: 80%;
 }
 
-.two-columns_paragraph {
+.two-columns__paragraph {
+  margin: 0;
+  padding: 0;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
   margin-top:30px;
 }
 
-.two-columns_paragraph:first-child {
+.two-columns__paragraph:first-child {
   margin-top: 0;
 }
 
-.two-columns_paragraph:last-child {
+.two-columns__paragraph:last-child {
   margin-bottom: 0px;
 }
 
-.span-accent {
+.two-columns__span-accent {
   font-weight: 600;
+  line-height: 34px;
+  font-size: 24px;
 }
 
 .digits {
+  margin-bottom:100px;
 }
 
 
@@ -228,15 +235,18 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .feynman__section {
-  height: 890px;
+  min-height: 890px;
   display: flex;
   position: relative;
   flex-direction: column;
   align-items: center;
 }
 
-.feynman__section-title {
+.feynman__title {
+  margin: 0;
+  padding: 0;
   width: 648px;
+  text-align: center;
   margin-top: 100px;
   line-height: 1.15;
   font-size: 120px;
@@ -244,7 +254,9 @@ h1, h2, h3, h4, h5, h6, p {
   z-index: 1;
 }
 
-.feynman__section-subtitle {
+.feynman__subtitle {
+  margin: 0;
+  padding: 0;
   margin-top: 70px;
   text-align: center;
   line-height: 51px;
@@ -266,6 +278,7 @@ h1, h2, h3, h4, h5, h6, p {
 .feynman__picture {
   position: absolute;
   bottom: 0;
+  left: 0;
   align-self: flex-start;
   justify-content: flex-end;
   width: 867px;
@@ -274,7 +287,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .kaufman {
-  background-color: #1e1e1e;
+  background-color: #1f1f1f;
   position: relative;
   overflow: hidden;
 }
@@ -285,10 +298,10 @@ h1, h2, h3, h4, h5, h6, p {
 
 .section-title_theme_dark {
   z-index: 2;
-  margin-top: 25px;
+  margin-top: 90px;
   line-height: 1.15;
   font-size: 60px;
-  font-weight: normal;
+  font-weight: 600;
 }
 
 .section-subtitle_theme_dark{
@@ -315,7 +328,6 @@ h1, h2, h3, h4, h5, h6, p {
 .theme_dark {
   color: white;
   margin-right: 0;
-  margin-top: 80px;
   z-index: 2;
 
 }
@@ -327,6 +339,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .kaufman__triangle {
   position: absolute;
+  background-image: url(../images/kaufman-triangle.svg);
   top: 0;
   right: -210px;
   height: 877px;
@@ -335,22 +348,22 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .footer {
-  background-color: #1e1e1e;
+  background-color: #1f1f1f;
   display: flex;
   justify-content: center;
+  min-height: 350px;
 }
 
-.footer__column {
+.footer__columns {
   margin-top: 60px;
   margin-bottom: 40px;
   width: 90%;
   display: flex;
   justify-content: space-between;
-/*  color: white;*/
+  color: white;
 }
 
 .column_content-copyright {
-  min-height: 350px;
   flex-basis: 711px;
   display: flex;
   flex-flow: column;
@@ -358,6 +371,8 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .footer-author {
+  margin: 0;
+  padding: 0;
   margin-top: 18px;
   margin-bottom: 18px;
   line-height: 25px;
@@ -366,17 +381,45 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .footer__column-heading {
+  margin: 0;
+  padding: 0;
   margin-bottom: 20px;
   line-height: 30px;
   font-size: 18px;
   font-weight: 600;
 }
 
-.logo_place-footer {
+.footer__logo_place_footer {
   background-image: url(../images/logo_place_footer.svg);
 }
 
 .column-links {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 16px;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.column-links__link {
+  color: white;
+  text-decoration: none;
+}
+
+.column-links__menu {
+  padding-left: 0;
+}
+
+.column-links__element {
+  list-style-type: none;
+}
+
+.footer_column-link {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
   color: white;
   text-decoration: none;
   margin-bottom: 16px;
@@ -385,14 +428,9 @@ h1, h2, h3, h4, h5, h6, p {
   font-weight: normal;
 }
 
-.column-link {
-  color: white;
-  text-decoration: none;
-  margin-bottom: 16px;
-  line-height: 30px;
-  font-size: 18px;
-  font-weight: normal;
-}
+.column-links__link-active:hover {
+  color: blue;
+  }
 
 .social-icon {
   margin-right: 10px;
